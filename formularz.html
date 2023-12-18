@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8/">
+<head>
+<title>formularz</title>
+</head>
+<body bgcolor="#E0E0E0">
+<font size="6"><center>FORMULARZ PRZYKŁADOWY</center></font><br />
+
+<form>
+    <p> Imię i nazwisko <input type="text" name="imie_i_nazwisko" size="30"/></p>
+    <p> Adres e-mail <input type="text" name="email" size="30"/></p>
+    <p> Hasło <input type="password" name="haslo" size="30"/></p>
+</form>
+
+<fieldset>
+    <legend> PŁEĆ: </legend> 
+        <input type="radio" name="plec" value="mezczyzna"/> Mężczyzna <br />
+        <input type="radio" name="plec" value="kobieta"/> Kobieta <br/>
+
+<p>
+        <input type="radio"  name="gender" id="male"  value="mezczyzna" > 
+        <label for="male"> Helikopter bojowy </label> <br />
+        <input type="radio"  name="gender" id="famale"  value="kobieta" > 
+        <label for="famale"> Panzerkampfwagen VI Tiger </label> <br /> </p>
+</fieldset>
+
+<fieldset>
+    <legend> JĘZYKI, KTÓRYMI WŁADASZ: </legend>
+        <p><input type="checkbox" name="nazwa_jezyki" value="wartosc_polski" checked/> Polski </p>
+        <p><input type="checkbox" name="nazwa_jezyki" value="wartosc_angielski" /> Angielski </p>
+        <p><input type="checkbox" name="nazwa_jezyki" value="wartosc_niemiecki" /> Niemiecki </p>
+</fieldset>
+
+<p>
+    <select name="nazwa_owoce" size="4" multiple>
+        <optgroup label="ULUBIONE OWOCE">
+            <option value="Truskawki" /> Truskawki
+            <option value="Banany" /> Banany
+            <option value="Maliny" /> Maliny
+        </optgroup>
+    </select>
+</p>
+<p>
+    <select id="days[]" name="days[]" size="7" multiple>
+        <optgroup label="DNI WOLNE">
+            <option> Sobota </option>
+            <option> Niedziela </option>
+        </optgroup>
+        <optgroup label="DNI ROBOCZE">
+            <option> Poniedziałek </option>
+            <option> Wtorek </option>
+            <option> Środa </option>
+            <option> Czwartek </option>
+            <option> Piątek </option>
+        </optgroup>
+    </select>
+</p>
+<input list="blok" name="przegladarki" />
+    <datalist id="blok">
+        <option value="Chrome">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Opera">
+        <option value="Opera GX">
+        <option value="Internet Explorer">
+    </datalist> <input type="submit" name="Prześlij">
+</input>
+
+<p>
+    <textarea cols="50" rows="6">
+Zimny S
+ul. Gdańska 20
+40-719 Katowice
+Polska</textarea>
+
+    <textarea cols="50" rows="6">
+Wprowadź swój adres</textarea>
+</p>
+</table>
+
+<p><input type="reset" id="q" /> -Przycisk resetowania (odświeża formularz)</p>
+<p><input type="button" name="leavel" value="Opusc stronę!"> </p>
+<p><button type="button" id="kupteraz" name="przycisk_kupowania" onclick="alert('Zakupiono dzieci')"> Kupuj teraz! </button> dzieci </p>
+<p><input type="file" name="leavel" value="Przeglądaj!"> </p>
+
+<p> 
+    Accesskey I (ALT + I) - skrót klawiaturowy:<br />
+    <label for="FirstName">Imię: </label>
+    <input type="text" id="FirstName" name="FirstName" accesskey="I" > </p>
+    
+    
+    
+    PRZYCISK JAKO OBRAZ: <br />
+    <input type="image" name="nazwa" src="foty/pies.jfif">   
+    
+    <p><br/></p>
+    <fieldset><legend>Usprawnienia w formularzach (HTML 5)</legend>
+    <p>AutoFocus:  <input type="text" id="Imie" autofocus/></p> 
+    <p>AutoComplete:  <input type="text" id="Imie" autocomplete/></p>
+    <p>Wypelnij:  <input type="text" id="Imie" required/></p>
+    <p>E-mail:  <input type="email" id="E-mail" value="adres@poczta.pl" required/></p>
+    <p>URL:  <input type="url" id="URL" value="http://" required/></p>
+    <p>Liczba:  <input type="number" min="1" max="50" step="2" value="1" id="liczba" required/></p>
+    <p>Data:  <input type="date" id="Data" required/></p>
+    <p>Color:  <input type="color" id="Data" required/></p>
+    
+    
+      
+     
+      
+     <form action="/action_page.php"   oninput="x.value=parseInt(a.value)+parseInt(b.value)">    0     
+     <input type="range"  id="a" name="a" value="50">    100 +   
+     <input type="number" id="b" name="b" value="50">    =     
+     <output name="x" for="a b"></output>       <br /><br />   
+     <input type="submit"> </form>  
+      
+    <form action="onclick"  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range"  id="a" name="a" value="50">
+      100 +
+      <input type="number" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+      <br><br>
+      <input type="submit">
+    </form> 
+    </fieldset>
+    </form>
+    </section>
+    
+    </main>
+    <footer> Piotr Kopernok 2C gr.1 &copy; 2023</footer>
+    
+
+
+
+</div>
+<div style="background-color: #e9e9e9;clear:both">
+    <center>&copy;P.K., October 2023</center>
+</div>
+</body>
+</html>

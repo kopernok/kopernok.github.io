@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8/">
+<head>
+<title>formularz na ocenę</title>
+</head>
+<body bgcolor="#E0E0E0">
+    <fieldset>
+        <legend><font color= "red"> Dane osobowe </font></legend>
+        <form>
+            <p> Imię <input type="text" name="imie"></p>
+            <p> Nazwisko <input type="text" name="nazwisko"></p>
+            <legend> Adres zamieszkania </legend>
+            <p> <textarea name="Adres" cols="30" rows="10"></textarea></p>
+            <p> Telefon kontaktowy <input type="number" min="000000000" max="999999999" name="telefon"></p>
+            <p> E-mail <input type="email" name="imie"></p>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend><font color= "red"> Formularz Zwrotu </font></legend>
+        <legend> Zwracam w niezniszczonym stanie: </legend>
+        <legend> Nazwa Towaru: </legend>
+        <p> <input type="text" name="nazwa_towaru"> </p>
+        <p> Kolor <input type="color" value="red"> </p>
+        <p> Indeks towaru <input type="text"> </p>
+        <legend> Rozmiar </legend>
+        <p><input type="checkbox" name="rozmiar" value="wartosc_rozmiar" checked/> 5 </p>
+        <p><input type="checkbox" name="rozmiar" value="wartosc_rozmiar" /> 10 </p>
+        <p><input type="checkbox" name="rozmiar" value="wartosc_rozmiar" /> 15 </p>
+        <p><input type="checkbox" name="rozmiar" value="wartosc_rozmiar" /> 20 </p>
+
+        <legend> Numer zakupu </legend>
+        <input type="radio" name="numer" value="1"/> 1 <br />
+        <input type="radio" name="numer" value="2"/> 2 <br />
+        <input type="radio" name="numer" value="3"/> 3 <br />
+
+        <p> Data zakupu:<input date="01.10.2018"></p>
+
+        <p> Przyczyna zwrotu: <textarea name="zwrot" cols="30" rows="10"></textarea></p>
+        <p> Kwota zwrotu: <input type="text" name="kwota"> </p>
+        <p> Dane do przelewu <textarea name="zwrot" cols="30" rows="10">
+            Imię i nazwisko
+            Miejsce zamieszkania
+            Numer konta</textarea>
+        </p>
+        
+        Zgodnie z ustawą z dnia 30 Maja 2014r. O prawach konsumenta (Dz. U. Z dnia 24 Czerwca 2014r. poz. 827) Niniejszym oświadczam, że odstępuję od umowy sprzedaży
+
+    </fieldset>
+</body>
